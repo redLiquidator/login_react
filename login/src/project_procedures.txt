@@ -1,0 +1,33 @@
+
+****vscode short key****
+line copy : shift alt ↑, ↓
+
+****react login project****
+use chrome, not explorer to see proper results of your project!
+
+npx create-react-app login
+npm start 로 정상적으로 기동되는지 확인할것
+download dependencies: npm install mobx --save
+                       npm install mobx-react --save
+package.json 에 root경로 지정: "homepage": "./" 
+
+****nodejs 적용****
+login react js 페이지 작업 후, npm run build (nodejs build folder를 생성한다. )
+지금까지 제작한 react login project를 frontend 폴더라고 지정하면, 
+전체 폴더구조는 아래와 같이 생성한다.
+reactloginapp - frontend
+              - backend : frontend폴더에 생성된 build 폴더를 copy&paste -> npm init (entry point: (index.js)Main.js 로 수정)
+backend디렉토리에 아래 dependencies install
+npm install bcrypt --save (hash a password)
+npm install express --save
+npm install express-mysql-session --save
+npm install express-session --save
+npn install mysql --save
+backend/build 디렉토리의 package.json에 start항목추가  "scripts": {"start": "node Main"}	
+https://www.wampserver.com/en/ installation online db 
+
+			  
+			  
+
+
+
